@@ -1,0 +1,8 @@
+Resultados vigentes del prototipo generativo: quantized_v3_internal.json y audit_boundaries_llamacpp_prompt_v3.json (si presente).
+Recuperación local sin LLM: evaluation_local_extractive.json.
+Pruebas de software: unit_tests.txt y ui_tests.txt.
+Los archivos baseline*, probe*, quantized_additional.json, evaluation_semantic_local_hf.json y auditorías v1/v2 se conservan como HISTORIAL de intentos, fallos y mejoras. No son evidencia de calidad actual ni de Qdrant Cloud.
+Ningún archivo documenta una conexión cloud actual. No se afirma exactitud general a partir de unos pocos ejemplos.
+
+RESULTADO VIGENTE CLOUD (15 noviembre)
+cloud_rag_acceptance.json: ejecución real Qdrant Cloud original + LLM local.26/26payloads coincidentes;4casos y3llamadasLLM. No sustituir sus estados con resultados locales previos. cloud_preflight.json es copia del preflight de esta ejecución. restored_environment_probe.json es LOCAL. regression_restored_environment.txt registra19tests software, no19consultas reales.

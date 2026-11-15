@@ -1,0 +1,39 @@
+AUDITORÍA INDEPENDIENTE — 15 noviembre 2026
+Alcance: código, README, notebook, pruebas y continuidad corpus frente al ACA1; no acceso a Qdrant/LLM.
+
+Ejecuciones reales:
+- pytest: 10/10 pruebas pasan.
+- evaluate.py: 7 consultas, precisión temática Top3 = 0.7777777778. Es recuperación TF-IDF/extractiva, no RAG generativo.
+- Streamlit AppTest: inicio, consulta y reinicio sin excepciones; dos mensajes de chat después de consulta. No sustituye inspección visual navegador.
+- Tres guías Markdown coinciden byte por byte con corpus ACA1. 26 fragmentos presentes.
+
+Bloqueos de cumplimiento:
+- No probada conexión actual a Qdrant cloud ni generación LLM. Requisitos centrales no se deben declarar cumplidos.
+- Notebook contiene ruta de integración condicionada a configuración; no demuestra resultado cloud sin ejecución.
+- Despliegue/Repositorio final, póster y video son entregables por completar/integrar.
+
+Defectos comunicados a autor:
+- llm_tested derivado del parámetro provider no demuestra llamada real si todas consultas se abstienen.
+- Nombre evaluation_local.json puede sobrescribir diagnóstico extractivo al usar LLM local; incluir proveedor en nombre.
+
+Seguridad:
+- No .env real presente en paquete; claves referidas mediante entorno, .gitignore incluye exclusiones.
+- App evita mostrar excepciones completas; Qdrant se consulta sin borrar ni reindexar.
+- Prompt separa documentos e instrucciones; validación de citas es sintáctica, no prueba de fidelidad.
+- Umbrales heurísticos no calibrados y evaluación pequeña están declarados.
+
+SEGUNDA REVISIÓN — llama.cpp / Qwen2.5-1.5B GGUF
+14 pruebas unitarias pasan. Recuperación semántica local MiniLM/Qdrant funciona.
+Fronteras prompt v1: ambas consultas (fecha beca/tasa matrícula) devuelven abstención por citas ausentes.
+Fronteras prompt v2: ambas generan citas y no inventan cifras, pero:
+- Fecha beca: cita F2 atribuye guía bienestar, mientras F2 corresponde a guía académica. Evidencia pertinente está en F3.
+- Tasa matrícula: F3 afirma que una recomendación sea suficiente, invirtiendo negación del documento original. El fragmento comienza truncado «una recomendación sea suficiente ni ...». Riesgo real por segmentación.
+Corrección solicitada: expandir contexto a límites de párrafo/oraciones y volver a evaluar. No presentar validación sintáctica como fidelidad semántica.
+Evidencia: results/audit_boundaries_llamacpp_prompt_v1.json y _v2.json.
+
+TERCERA REVISIÓN — contexto expandido a párrafos
+Ejecución independiente de 2 fronteras con Qwen1.5B GGUF y llama.cpp:
+- Tasa matrícula: respuesta «[F1] No se proporciona información sobre tasa...» coincide con fuente que no establece tasas. Inversión anterior corregida en este caso.
+- Fecha beca: modelo genera índice inexistente F4; filtro lo detecta y muestra abstención. No se expone fecha inventada.
+La prueba demuestra mejora y utilidad del filtro, no ausencia general de alucinaciones. Evidencia: results/audit_boundaries_llamacpp_prompt_v3.json.
+15 tests pasaron antes de añadir test hash. Autor añadió comparación SHA256 para verificar correspondencia remota/local.

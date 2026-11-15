@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-11-15T16:56:37.397060+00:00",
+  "cloud_verified": true,
+  "read_only": true,
+  "collection": "aca1_permanencia_documental_v1",
+  "vector_size": 384,
+  "points_count": 26,
+  "expected_points": 26,
+  "read_points": 26,
+  "matching_points": 26,
+  "status": "original_corpus_matches"
+}

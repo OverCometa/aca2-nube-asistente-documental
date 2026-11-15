@@ -1,0 +1,461 @@
+[
+  {
+    "id": "de461bf7-9b1f-508c-b822-c7f21895ae47",
+    "text": "# Guía didáctica de acompañamiento académico ## Propósito y alcance Este manual propone un procedimiento de acompañamiento académico para un prototipo universitario. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1; no es un reglamento de CUN ni un protocolo institucional aprobado. Se apoya conceptualmente en la gestión integral de la permanencia descrita por el Ministerio de Educación",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 0,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "1a983862-82b4-5e8f-8d94-5bad51bdd79a",
+    "text": "la gestión integral de la permanencia descrita por el Ministerio de Educación Nacional (MEN, 2023). ## Tutorías y dificultad en asignaturas Cuando un estudiante solicita ayuda porque no comprende una asignatura, el primer paso propuesto es precisar el tema que le resulta difícil y revisar las actividades pendientes con el docente. Una tutoría académica puede centrarse en resolver dudas conceptuales,",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 48,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "8be3e863-9a7a-5cf0-b658-046105a6bdbc",
+    "text": "con el docente. Una tutoría académica puede centrarse en resolver dudas conceptuales, practicar ejercicios y revisar criterios de evaluación. Conviene acordar una meta pequeña y verificable para la siguiente sesión. Este procedimiento es una propuesta didáctica y no garantiza aprobar ni permanecer matriculado. ## Organización del estudio Para una consulta sobre hábitos de estudio, se propone construir un horario semanal",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 96,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "97ce75de-44ce-5c44-a6e7-6f46abb264c8",
+    "text": "una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 144,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "deba8440-b121-5ecb-98f7-2c136f301cad",
+    "text": "acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante. ## Seguimiento académico y datos En el dataset UCI existen cantidades de asignaturas inscritas y aprobadas durante el primer semestre. Estas variables permiten describir avance académico en la muestra portuguesa. La relación con este manual es temática: no existe evidencia de que esos estudiantes",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 192,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "37ec5e8d-4fad-5ce6-9c75-daca625f4f22",
+    "text": "con este manual es temática: no existe evidencia de que esos estudiantes recibieran las tutorías propuestas. Los registros no corresponden a CUN ni sirven para asignar sanciones, diagnósticos o beneficios individuales en Colombia. ## Uso en el buscador Preguntas como «¿Cómo organizar el estudio semanal?» o «¿Qué acompañamiento académico se puede proponer cuando una asignatura resulta difícil?» deben recuperar este",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 240,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "102bcacb-f10a-515a-9f2f-784d7849e9ff",
+    "text": "académico se puede proponer cuando una asignatura resulta difícil?» deben recuperar este manual. El resultado del buscador debe mostrar el fragmento y su procedencia. Si el documento no contiene una respuesta, no se debe completar la información con reglas inventadas. ## Referencia Ministerio de Educación Nacional. (2023, 29 de mayo). *Gestión de la permanencia*. https://www.mineducacion.gov.co/sistemasinfo/spadies/secciones/Gestion-de-la-permanencia/",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 288,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "72028805-2817-5513-8648-efd143d4aaa6",
+    "text": "de mayo). *Gestión de la permanencia*. https://www.mineducacion.gov.co/sistemasinfo/spadies/secciones/Gestion-de-la-permanencia/",
+    "document": "Guía didáctica de acompañamiento académico",
+    "file": "01_guia_academica.md",
+    "page": 1,
+    "word_start": 336,
+    "tema": "academico",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (enrolled)"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5"
+  },
+  {
+    "id": "a3c37da7-8176-5ee6-bb3d-1b8587059f19",
+    "text": "# Guía didáctica de orientación sobre apoyos económicos ## Propósito y alcance Este manual propone una ruta de orientación para consultas sobre financiación de matrícula y apoyos económicos. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1 y no representa una convocatoria de becas ni un compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 0,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "d8599764-42bf-5637-8422-e41ef7c95d19",
+    "text": "compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia se apoya en el enfoque integral del MEN (2023). ## Dificultades para pagar la matrícula Ante una consulta por falta de recursos, se propone contactar el área financiera de la institución y solicitar información escrita sobre alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores,",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 48,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "c4c0e4d4-a848-548e-b3cc-1778fa0419e7",
+    "text": "alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores, fechas, requisitos y condiciones. Este corpus no establece plazos, tasas, condonaciones ni acuerdos de pago. Toda condición concreta debe verificarse en la fuente institucional correspondiente. ## Becas y apoyos Una beca puede tener requisitos distintos según la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria,",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 96,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "297a772e-3da6-59b2-b364-0bdc2d110040",
+    "text": "la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados. El buscador no debe prometer una beca por obtener una puntuación alta de similitud. Tampoco puede declarar que alguien cumple los requisitos sin contar con información oficial y suficiente. ## Registro y seguimiento de la orientación Para",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 144,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "903ec7b5-7063-5d44-81c9-89274fbcc501",
+    "text": "información oficial y suficiente. ## Registro y seguimiento de la orientación Para acompañar una solicitud se propone llevar un registro de la pregunta, la fuente consultada, los documentos pendientes y la fecha de respuesta esperada. El estudiante conserva la decisión de solicitar o no el apoyo. Si se piden datos personales, deben compartirse únicamente por los canales institucionales previstos para",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 192,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "1389f12e-9dfa-5735-8c25-6076ee189971",
+    "text": "piden datos personales, deben compartirse únicamente por los canales institucionales previstos para esa finalidad. El prototipo no necesita nombres, números de documento ni comprobantes financieros reales. ## Relación con el dataset Las variables de matrícula al día y condición de becario del dataset UCI permiten mostrar categorías agregadas de una muestra de Portugal. No identifican qué ayuda financiera debería recibir",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 240,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "4c80b417-2297-579b-9fff-3e2abb208d77",
+    "text": "de una muestra de Portugal. No identifican qué ayuda financiera debería recibir una persona en Colombia. El vínculo entre estas variables y la guía es temático; no existe una relación entre sus registros individuales y las propuestas de este manual. La clasificación final del dataset tampoco demuestra causalidad entre una beca y graduarse. ## Uso en el buscador Las consultas",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 288,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "231b714e-5a62-5da7-b2ab-324a8cfd034f",
+    "text": "entre una beca y graduarse. ## Uso en el buscador Las consultas sobre pago de matrícula, búsqueda de convocatorias y preparación de una solicitud de apoyo deben recuperar fragmentos financieros. El sistema presenta documentación contextual, no asesoría crediticia personalizada ni decisiones automáticas sobre acceso a financiación. ## Referencia Ministerio de Educación Nacional. (2023, 29 de mayo). *Gestión de la permanencia*.",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 336,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "d08c4074-3d24-5f32-ae79-0f3b0f1fc369",
+    "text": "Ministerio de Educación Nacional. (2023, 29 de mayo). *Gestión de la permanencia*. https://www.mineducacion.gov.co/sistemasinfo/spadies/secciones/Gestion-de-la-permanencia/",
+    "document": "Guía didáctica de orientación sobre apoyos económicos",
+    "file": "02_guia_financiera.md",
+    "page": 1,
+    "word_start": 384,
+    "tema": "financiero",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Tuition fees up to date",
+      "Scholarship holder"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0"
+  },
+  {
+    "id": "b3aabdad-262e-59be-99eb-011531953a62",
+    "text": "# Guía didáctica de orientación hacia bienestar e inclusión ## Propósito y alcance Esta guía propone una orientación inicial hacia los servicios de bienestar e inclusión. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1; no es un manual clínico, un diagnóstico ni una norma de CUN. El MEN (2016) plantea el bienestar como una función relacionada con",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 0,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "448fd181-fefd-56ae-bdd4-aab6bb77c24b",
+    "text": "CUN. El MEN (2016) plantea el bienestar como una función relacionada con la formación integral y el desarrollo de capacidades; este documento desarrolla ejemplos didácticos propios para la recuperación semántica. ## Solicitar acompañamiento psicosocial Cuando un estudiante expresa que necesita hablar con alguien sobre dificultades personales que afectan su experiencia académica, se propone consultar los canales institucionales de bienestar y",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 48,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "c983f672-c88c-5d81-b4ea-a142f3417e90",
+    "text": "su experiencia académica, se propone consultar los canales institucionales de bienestar y solicitar una cita con el servicio competente. El buscador solo debe recuperar información de orientación disponible en el corpus. No evalúa síntomas, no prescribe tratamientos y no reemplaza la atención profesional. La ausencia de una respuesta documental debe quedar explícita. ## Inclusión y necesidades educativas Para una consulta",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 96,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "12811d77-7fcb-5e6b-9e4a-78d781e85fbb",
+    "text": "documental debe quedar explícita. ## Inclusión y necesidades educativas Para una consulta sobre apoyos de acceso al aprendizaje, la ruta propuesta es contactar a la unidad de inclusión o bienestar de la institución y describir las barreras encontradas. Se puede solicitar información sobre el procedimiento para valorar ajustes y apoyos. Esta guía no asigna derechos o beneficios específicos ni presume",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 144,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "4333c53e-12ea-5e71-8a02-44cea8b9eca3",
+    "text": "y apoyos. Esta guía no asigna derechos o beneficios específicos ni presume que una categoría del dataset equivalga a un diagnóstico. Las medidas aplicables deben verificarse con la institución correspondiente. ## Participación y vida universitaria Las actividades culturales, deportivas y de integración pueden ser temas de orientación estudiantil. El estudiante puede consultar la oferta disponible y las condiciones de participación.",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 192,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "3ae10d61-0e44-530a-b3bf-6c9f8c406b74",
+    "text": "El estudiante puede consultar la oferta disponible y las condiciones de participación. En este prototipo no se publican horarios ni cupos reales: inventarlos sería confundir una demostración académica con un servicio institucional. Una consulta que pida fechas concretas requiere acudir a la fuente oficial. ## Privacidad y registro mínimo La demostración de búsqueda se hace con preguntas generales, sin historias",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 240,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "fb08eede-a994-5b4c-94cb-7b4cd19197ca",
+    "text": "mínimo La demostración de búsqueda se hace con preguntas generales, sin historias clínicas ni identidades reales. Los registros de prueba guardan la pregunta y los fragmentos recuperados para revisar el funcionamiento del sistema. No se crean perfiles psicológicos. La presencia de necesidades educativas especiales en el dataset UCI se utiliza únicamente como metadato temático y no autoriza inferir la condición",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 288,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "e1ee739a-055b-58b2-8a2f-b172e34b8227",
+    "text": "se utiliza únicamente como metadato temático y no autoriza inferir la condición de un usuario. ## Uso en el buscador Preguntas como «¿Dónde solicitar acompañamiento psicosocial?» o «¿Cómo pedir orientación sobre barreras de aprendizaje?» deben recuperar esta guía. Una puntuación de similitud indica cercanía semántica; no certifica que una recomendación sea suficiente ni que una política institucional esté vigente. ##",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 336,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  },
+  {
+    "id": "bc0f4eee-cc70-52e5-ba6c-637447edff87",
+    "text": "una recomendación sea suficiente ni que una política institucional esté vigente. ## Referencia Ministerio de Educación Nacional. (2016). *Lineamientos de política de bienestar para instituciones de educación superior*. https://www.mineducacion.gov.co/1759/articles-360314_recurso.pdf",
+    "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+    "file": "03_guia_bienestar.md",
+    "page": 1,
+    "word_start": 384,
+    "tema": "bienestar",
+    "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+    "dataset": "UCI 697",
+    "dataset_country": "Portugal",
+    "dataset_fields": [
+      "Educational special needs"
+    ],
+    "relation": "Vinculación temática; no relación individual ni validación causal",
+    "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8"
+  }
+]

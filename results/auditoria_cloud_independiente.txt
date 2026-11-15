@@ -1,0 +1,13 @@
+AUDITORÍA INDEPENDIENTE DE EVIDENCIA CLOUD
+15 noviembre 2026. Revisión del archivo cloud_rag_acceptance.json y del corpus local; no se repitió conexión remota ni se dispuso de claves.
+
+Preflight registrado: colección original aca1_permanencia_documental_v1, 384 dimensiones,26 puntos leídos/esperados/coincidentes, operación solo lectura. La evidencia permite actualizar estado anterior «cloud pendiente» a «integración cloud ejecutada en cuatro casos exploratorios», atribuida a la ejecución registrada por el autor. Se verificó independientemente SHA256 de todos los documentos citados contra archivos locales: coinciden.
+
+Casos:
+1. Estudio semanal: respuesta útil y fiel al párrafo F1; cita válida. Copia sustancialmente el párrafo, no síntesis novedosa. Supera instrucción de60palabras, menor defecto de formato.
+2. Preparación beca: texto bruto es fiel al corpus, pero no cita. Filtro rechaza correctamente; fallo de formato de salida, no falta real de evidencia en corpus. Mensaje final puede confundir «no dispongo evidencia» con «modelo no citó»; incluye aclaración de citas inválidas.
+3. Tasa financiación: afirma correctamente que no existe tasa en la guía. F1 lo respalda; F2/F3 finales están sueltas y aportan ruido. No inventa valores.
+4. Fecha beca: abstención por recuperación (score inferior umbral), sin llamada LLM. Correcta ausencia de fecha, no prueba de comportamiento generativo.
+
+19/19 pruebas pytest se repitieron y pasaron. No constituyen19 pruebas cloud.
+Conclusión: evidencia técnica de recuperación cloud y3 llamadas LLM reales según registro, con calidad mixta:1 respuesta sustantiva adecuada,1 reconocimiento correcto de dato ausente,1 bloqueo de respuesta sin citas y1 abstención por recuperación. No reportar100% de exactitud ni fidelidad general; muestra muy pequeña. No se verificó despliegue público ni configuración persistente de credenciales.

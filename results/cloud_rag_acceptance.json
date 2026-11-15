@@ -1,0 +1,338 @@
+{
+  "timestamp_utc": "2026-11-15T16:57:23.979633+00:00",
+  "scope": "Qdrant Cloud original + llama.cpp Qwen1.5B Q4_K_M",
+  "preflight": {
+    "timestamp_utc": "2026-11-15T16:56:37.397060+00:00",
+    "cloud_verified": true,
+    "read_only": true,
+    "collection": "aca1_permanencia_documental_v1",
+    "vector_size": 384,
+    "points_count": 26,
+    "expected_points": 26,
+    "read_points": 26,
+    "matching_points": 26,
+    "status": "original_corpus_matches"
+  },
+  "reports": [
+    {
+      "hits": [
+        {
+          "id": "97ce75de-44ce-5c44-a6e7-6f46abb264c8",
+          "text": "## Organización del estudio\nPara una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante.",
+          "document": "Guía didáctica de acompañamiento académico",
+          "file": "01_guia_academica.md",
+          "page": 1,
+          "word_start": 144,
+          "tema": "academico",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Curricular units 1st sem (approved)",
+            "Curricular units 1st sem (enrolled)"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5",
+          "score": 0.73743105,
+          "retrieved_fragment": "una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "8be3e863-9a7a-5cf0-b658-046105a6bdbc",
+          "text": "## Tutorías y dificultad en asignaturas\nCuando un estudiante solicita ayuda porque no comprende una asignatura, el primer paso propuesto es precisar el tema que le resulta difícil y revisar las actividades pendientes con el docente. Una tutoría académica puede centrarse en resolver dudas conceptuales, practicar ejercicios y revisar criterios de evaluación. Conviene acordar una meta pequeña y verificable para la siguiente sesión. Este procedimiento es una propuesta didáctica y no garantiza aprobar ni permanecer matriculado.\n\n## Organización del estudio\nPara una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante.",
+          "document": "Guía didáctica de acompañamiento académico",
+          "file": "01_guia_academica.md",
+          "page": 1,
+          "word_start": 96,
+          "tema": "academico",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Curricular units 1st sem (approved)",
+            "Curricular units 1st sem (enrolled)"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5",
+          "score": 0.56941384,
+          "retrieved_fragment": "con el docente. Una tutoría académica puede centrarse en resolver dudas conceptuales, practicar ejercicios y revisar criterios de evaluación. Conviene acordar una meta pequeña y verificable para la siguiente sesión. Este procedimiento es una propuesta didáctica y no garantiza aprobar ni permanecer matriculado. ## Organización del estudio Para una consulta sobre hábitos de estudio, se propone construir un horario semanal",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "3ae10d61-0e44-530a-b3bf-6c9f8c406b74",
+          "text": "## Participación y vida universitaria\nLas actividades culturales, deportivas y de integración pueden ser temas de orientación estudiantil. El estudiante puede consultar la oferta disponible y las condiciones de participación. En este prototipo no se publican horarios ni cupos reales: inventarlos sería confundir una demostración académica con un servicio institucional. Una consulta que pida fechas concretas requiere acudir a la fuente oficial.\n\n## Privacidad y registro mínimo\nLa demostración de búsqueda se hace con preguntas generales, sin historias clínicas ni identidades reales. Los registros de prueba guardan la pregunta y los fragmentos recuperados para revisar el funcionamiento del sistema. No se crean perfiles psicológicos. La presencia de necesidades educativas especiales en el dataset UCI se utiliza únicamente como metadato temático y no autoriza inferir la condición de un usuario.",
+          "document": "Guía didáctica de orientación hacia bienestar e inclusión",
+          "file": "03_guia_bienestar.md",
+          "page": 1,
+          "word_start": 240,
+          "tema": "bienestar",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/03_guia_bienestar.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Educational special needs"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "4b87625f64bf731e6b16aff5362ea46868a6928ef8c9c52a697470ed83bdb0e8",
+          "score": 0.515108,
+          "retrieved_fragment": "El estudiante puede consultar la oferta disponible y las condiciones de participación. En este prototipo no se publican horarios ni cupos reales: inventarlos sería confundir una demostración académica con un servicio institucional. Una consulta que pida fechas concretas requiere acudir a la fuente oficial. ## Privacidad y registro mínimo La demostración de búsqueda se hace con preguntas generales, sin historias",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        }
+      ],
+      "retrieval_ms": 402.3,
+      "retrieval_mode": "cloud",
+      "question": "¿Cómo organizar el estudio semanal?",
+      "raw_llm_output_for_audit": "[F1] Para una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante.",
+      "llm_called": true,
+      "answer": "[F1] Para una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante.",
+      "status": "generado_con_citas_sintacticas",
+      "provider": "llamacpp",
+      "total_ms": 16078.42,
+      "note": "Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana."
+    },
+    {
+      "hits": [
+        {
+          "id": "903ec7b5-7063-5d44-81c9-89274fbcc501",
+          "text": "## Becas y apoyos\nUna beca puede tener requisitos distintos según la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados. El buscador no debe prometer una beca por obtener una puntuación alta de similitud. Tampoco puede declarar que alguien cumple los requisitos sin contar con información oficial y suficiente.\n\n## Registro y seguimiento de la orientación\nPara acompañar una solicitud se propone llevar un registro de la pregunta, la fuente consultada, los documentos pendientes y la fecha de respuesta esperada. El estudiante conserva la decisión de solicitar o no el apoyo. Si se piden datos personales, deben compartirse únicamente por los canales institucionales previstos para esa finalidad. El prototipo no necesita nombres, números de documento ni comprobantes financieros reales.",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 192,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.42890537,
+          "retrieved_fragment": "información oficial y suficiente. ## Registro y seguimiento de la orientación Para acompañar una solicitud se propone llevar un registro de la pregunta, la fuente consultada, los documentos pendientes y la fecha de respuesta esperada. El estudiante conserva la decisión de solicitar o no el apoyo. Si se piden datos personales, deben compartirse únicamente por los canales institucionales previstos para",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "297a772e-3da6-59b2-b364-0bdc2d110040",
+          "text": "## Becas y apoyos\nUna beca puede tener requisitos distintos según la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados. El buscador no debe prometer una beca por obtener una puntuación alta de similitud. Tampoco puede declarar que alguien cumple los requisitos sin contar con información oficial y suficiente.\n\n## Registro y seguimiento de la orientación\nPara acompañar una solicitud se propone llevar un registro de la pregunta, la fuente consultada, los documentos pendientes y la fecha de respuesta esperada. El estudiante conserva la decisión de solicitar o no el apoyo. Si se piden datos personales, deben compartirse únicamente por los canales institucionales previstos para esa finalidad. El prototipo no necesita nombres, números de documento ni comprobantes financieros reales.",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 144,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.37457377,
+          "retrieved_fragment": "la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados. El buscador no debe prometer una beca por obtener una puntuación alta de similitud. Tampoco puede declarar que alguien cumple los requisitos sin contar con información oficial y suficiente. ## Registro y seguimiento de la orientación Para",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "c4c0e4d4-a848-548e-b3cc-1778fa0419e7",
+          "text": "## Dificultades para pagar la matrícula\nAnte una consulta por falta de recursos, se propone contactar el área financiera de la institución y solicitar información escrita sobre alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores, fechas, requisitos y condiciones. Este corpus no establece plazos, tasas, condonaciones ni acuerdos de pago. Toda condición concreta debe verificarse en la fuente institucional correspondiente.\n\n## Becas y apoyos\nUna beca puede tener requisitos distintos según la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados. El buscador no debe prometer una beca por obtener una puntuación alta de similitud. Tampoco puede declarar que alguien cumple los requisitos sin contar con información oficial y suficiente.",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 96,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.37430292,
+          "retrieved_fragment": "alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores, fechas, requisitos y condiciones. Este corpus no establece plazos, tasas, condonaciones ni acuerdos de pago. Toda condición concreta debe verificarse en la fuente institucional correspondiente. ## Becas y apoyos Una beca puede tener requisitos distintos según la convocatoria. Por ello, la ruta didáctica consiste en identificar la convocatoria,",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        }
+      ],
+      "retrieval_ms": 458.42,
+      "retrieval_mode": "cloud",
+      "question": "¿Qué revisar antes de solicitar una beca?",
+      "raw_llm_output_for_audit": "Antes de solicitar una beca, revisar la convocatoria, confirmar su vigencia, leer los criterios y preparar los soportes solicitados.",
+      "llm_called": true,
+      "answer": "No dispongo de evidencia suficiente en estas guías para responder. Consulta la fuente institucional correspondiente. La salida del modelo no presentó citas válidas; no se muestra como respuesta sustentada.",
+      "status": "salida_no_validada",
+      "provider": "llamacpp",
+      "total_ms": 14415.65,
+      "note": "Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana."
+    },
+    {
+      "hits": [
+        {
+          "id": "d8599764-42bf-5637-8422-e41ef7c95d19",
+          "text": "## Propósito y alcance\nEste manual propone una ruta de orientación para consultas sobre financiación de matrícula y apoyos económicos. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1 y no representa una convocatoria de becas ni un compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia se apoya en el enfoque integral del MEN (2023).\n\n## Dificultades para pagar la matrícula\nAnte una consulta por falta de recursos, se propone contactar el área financiera de la institución y solicitar información escrita sobre alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores, fechas, requisitos y condiciones. Este corpus no establece plazos, tasas, condonaciones ni acuerdos de pago. Toda condición concreta debe verificarse en la fuente institucional correspondiente.",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 48,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.48286712,
+          "retrieved_fragment": "compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia se apoya en el enfoque integral del MEN (2023). ## Dificultades para pagar la matrícula Ante una consulta por falta de recursos, se propone contactar el área financiera de la institución y solicitar información escrita sobre alternativas vigentes. Antes de asumir una obligación, el estudiante debe revisar valores,",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "a3c37da7-8176-5ee6-bb3d-1b8587059f19",
+          "text": "# Guía didáctica de orientación sobre apoyos económicos\n\n## Propósito y alcance\nEste manual propone una ruta de orientación para consultas sobre financiación de matrícula y apoyos económicos. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1 y no representa una convocatoria de becas ni un compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia se apoya en el enfoque integral del MEN (2023).",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 0,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.45438865,
+          "retrieved_fragment": "# Guía didáctica de orientación sobre apoyos económicos ## Propósito y alcance Este manual propone una ruta de orientación para consultas sobre financiación de matrícula y apoyos económicos. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1 y no representa una convocatoria de becas ni un compromiso de una universidad. La consideración de factores socioeconómicos en la permanencia",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "231b714e-5a62-5da7-b2ab-324a8cfd034f",
+          "text": "## Relación con el dataset\nLas variables de matrícula al día y condición de becario del dataset UCI permiten mostrar categorías agregadas de una muestra de Portugal. No identifican qué ayuda financiera debería recibir una persona en Colombia. El vínculo entre estas variables y la guía es temático; no existe una relación entre sus registros individuales y las propuestas de este manual. La clasificación final del dataset tampoco demuestra causalidad entre una beca y graduarse.\n\n## Uso en el buscador\nLas consultas sobre pago de matrícula, búsqueda de convocatorias y preparación de una solicitud de apoyo deben recuperar fragmentos financieros. El sistema presenta documentación contextual, no asesoría crediticia personalizada ni decisiones automáticas sobre acceso a financiación.\n\n## Referencia\nMinisterio de Educación Nacional. (2023, 29 de mayo). *Gestión de la permanencia*. https://www.mineducacion.gov.co/sistemasinfo/spadies/secciones/Gestion-de-la-permanencia/\n",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 336,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.41805527,
+          "retrieved_fragment": "entre una beca y graduarse. ## Uso en el buscador Las consultas sobre pago de matrícula, búsqueda de convocatorias y preparación de una solicitud de apoyo deben recuperar fragmentos financieros. El sistema presenta documentación contextual, no asesoría crediticia personalizada ni decisiones automáticas sobre acceso a financiación. ## Referencia Ministerio de Educación Nacional. (2023, 29 de mayo). *Gestión de la permanencia*.",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        }
+      ],
+      "retrieval_ms": 253.51,
+      "retrieval_mode": "cloud",
+      "question": "¿Cuál es la tasa de financiación de matrícula?",
+      "raw_llm_output_for_audit": "[F1] Este manual no proporciona información sobre tasas de financiación de matrícula. [F2] [F3]",
+      "llm_called": true,
+      "answer": "[F1] Este manual no proporciona información sobre tasas de financiación de matrícula. [F2] [F3]",
+      "status": "generado_con_citas_sintacticas",
+      "provider": "llamacpp",
+      "total_ms": 13122.97,
+      "note": "Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana."
+    },
+    {
+      "hits": [
+        {
+          "id": "de461bf7-9b1f-508c-b822-c7f21895ae47",
+          "text": "# Guía didáctica de acompañamiento académico\n\n## Propósito y alcance\nEste manual propone un procedimiento de acompañamiento académico para un prototipo universitario. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1; no es un reglamento de CUN ni un protocolo institucional aprobado. Se apoya conceptualmente en la gestión integral de la permanencia descrita por el Ministerio de Educación Nacional (MEN, 2023).",
+          "document": "Guía didáctica de acompañamiento académico",
+          "file": "01_guia_academica.md",
+          "page": 1,
+          "word_start": 0,
+          "tema": "academico",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Curricular units 1st sem (approved)",
+            "Curricular units 1st sem (enrolled)"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5",
+          "score": 0.30289426,
+          "retrieved_fragment": "# Guía didáctica de acompañamiento académico ## Propósito y alcance Este manual propone un procedimiento de acompañamiento académico para un prototipo universitario. Es elaboración propia de Over Santiago Cometa Hernández para ACA 1; no es un reglamento de CUN ni un protocolo institucional aprobado. Se apoya conceptualmente en la gestión integral de la permanencia descrita por el Ministerio de Educación",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "1389f12e-9dfa-5735-8c25-6076ee189971",
+          "text": "## Registro y seguimiento de la orientación\nPara acompañar una solicitud se propone llevar un registro de la pregunta, la fuente consultada, los documentos pendientes y la fecha de respuesta esperada. El estudiante conserva la decisión de solicitar o no el apoyo. Si se piden datos personales, deben compartirse únicamente por los canales institucionales previstos para esa finalidad. El prototipo no necesita nombres, números de documento ni comprobantes financieros reales.\n\n## Relación con el dataset\nLas variables de matrícula al día y condición de becario del dataset UCI permiten mostrar categorías agregadas de una muestra de Portugal. No identifican qué ayuda financiera debería recibir una persona en Colombia. El vínculo entre estas variables y la guía es temático; no existe una relación entre sus registros individuales y las propuestas de este manual. La clasificación final del dataset tampoco demuestra causalidad entre una beca y graduarse.",
+          "document": "Guía didáctica de orientación sobre apoyos económicos",
+          "file": "02_guia_financiera.md",
+          "page": 1,
+          "word_start": 240,
+          "tema": "financiero",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/02_guia_financiera.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Tuition fees up to date",
+            "Scholarship holder"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "82ac0545417cd998dfdc920f8ad3a884567fad4d0870541ebc49c17d1fb7a2e0",
+          "score": 0.28611085,
+          "retrieved_fragment": "piden datos personales, deben compartirse únicamente por los canales institucionales previstos para esa finalidad. El prototipo no necesita nombres, números de documento ni comprobantes financieros reales. ## Relación con el dataset Las variables de matrícula al día y condición de becario del dataset UCI permiten mostrar categorías agregadas de una muestra de Portugal. No identifican qué ayuda financiera debería recibir",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        },
+        {
+          "id": "deba8440-b121-5ecb-98f7-2c136f301cad",
+          "text": "## Organización del estudio\nPara una consulta sobre hábitos de estudio, se propone construir un horario semanal que incluya clases, trabajo independiente y descansos. El plan debe distribuir las tareas antes de las fechas de entrega y reservar tiempo para solicitar retroalimentación. El seguimiento puede registrar tareas realizadas, dudas pendientes y la siguiente acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante.\n\n## Seguimiento académico y datos\nEn el dataset UCI existen cantidades de asignaturas inscritas y aprobadas durante el primer semestre. Estas variables permiten describir avance académico en la muestra portuguesa. La relación con este manual es temática: no existe evidencia de que esos estudiantes recibieran las tutorías propuestas. Los registros no corresponden a CUN ni sirven para asignar sanciones, diagnósticos o beneficios individuales en Colombia.",
+          "document": "Guía didáctica de acompañamiento académico",
+          "file": "01_guia_academica.md",
+          "page": 1,
+          "word_start": 192,
+          "tema": "academico",
+          "source": "https://github.com/OverCometa/aca1-nube-busqueda-semantica/blob/main/corpus/01_guia_academica.md",
+          "dataset": "UCI 697",
+          "dataset_country": "Portugal",
+          "dataset_fields": [
+            "Curricular units 1st sem (approved)",
+            "Curricular units 1st sem (enrolled)"
+          ],
+          "relation": "Vinculación temática; no relación individual ni validación causal",
+          "sha256": "ff253feddabf8d4097881b15b03a262854d40bb75e76efa07c80a954f6eee1f5",
+          "score": 0.27800235,
+          "retrieved_fragment": "acción acordada. No se recomienda interpretar la falta de tiempo como una falla moral del estudiante. ## Seguimiento académico y datos En el dataset UCI existen cantidades de asignaturas inscritas y aprobadas durante el primer semestre. Estas variables permiten describir avance académico en la muestra portuguesa. La relación con este manual es temática: no existe evidencia de que esos estudiantes",
+          "context_verified": true,
+          "context_policy": "párrafos completos que intersectan el fragmento ACA1"
+        }
+      ],
+      "retrieval_ms": 362.43,
+      "retrieval_mode": "cloud",
+      "question": "¿Cuál es la fecha límite de becas CUN en noviembre de 2026?",
+      "raw_llm_output_for_audit": null,
+      "llm_called": false,
+      "answer": "No dispongo de evidencia suficiente en estas guías para responder. Consulta la fuente institucional correspondiente.",
+      "status": "abstencion_recuperacion",
+      "provider": "llamacpp",
+      "total_ms": 363.27,
+      "note": "Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana."
+    }
+  ],
+  "limitations": "Cuatro casos exploratorios, revisar fidelidad humana; citas sintácticas no prueban exactitud."
+}
