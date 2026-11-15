@@ -38,16 +38,20 @@ def disconnect_cloud_session(clear_widget=True):
  if clear_widget:st.session_state.session_qdrant_key=''
  st.session_state.cloud_connection_message='Conexión retirada del estado de la sesión.'
 
+MANAGED_CLOUD=bool(os.getenv('QDRANT_URL') and os.getenv('QDRANT_API_KEY'))
+
 st.set_page_config(page_title='Orientación académica · ACA 2',page_icon='📚',layout='wide')
 st.title('Orientación académica con evidencia')
 st.caption('Over Santiago Cometa Hernández · CUN · Computación en la Nube · ACA 2')
-st.caption('Chatbot generativo en CPU, sin API de pago. La recuperación predeterminada usa el corpus local; no Qdrant Cloud. La primera consulta descarga modelos oficiales y puede tardar varios minutos.')
+st.caption('Chatbot generativo en CPU, sin API de pago. '+('Recuperación predeterminada en Qdrant Cloud con acceso temporal configurado por el propietario.' if MANAGED_CLOUD else 'Recuperación predeterminada sobre corpus local, sin Qdrant Cloud.')+' La primera consulta descarga modelos oficiales y puede tardar varios minutos.')
 st.info('Prototipo didáctico: las tres guías son de elaboración propia, no reglamentos oficiales de CUN. No introducir información personal sensible.')
 with st.sidebar:
  st.header('Configuración')
- mode=st.selectbox('Recuperación',['semantic_local','local','cloud'],format_func=lambda x:{'local':'Local · TF-IDF (diagnóstico)','semantic_local':'Qdrant local · embeddings ACA 1','cloud':'Qdrant Cloud · embeddings ACA 1'}[x])
+ mode=st.selectbox('Recuperación',(['cloud','semantic_local','local'] if MANAGED_CLOUD else ['semantic_local','local','cloud']),format_func=lambda x:{'local':'Local · TF-IDF (diagnóstico)','semantic_local':'Qdrant local · embeddings ACA 1','cloud':'Qdrant Cloud · embeddings ACA 1'}[x])
  provider=st.selectbox('Generación',['llamacpp','extractive','ollama','api','hf'],format_func=lambda x:{'extractive':'Sin LLM · inspección documental','ollama':'LLM local · Ollama','api':'LLM · API compatible','hf':'LLM local · Hugging Face (experimental)','llamacpp':'LLM local · llama.cpp (GGUF)'}[x])
- if mode=='cloud':
+ if mode=='cloud' and MANAGED_CLOUD:
+  st.success('Qdrant Cloud configurado por el propietario. No necesitas introducir credenciales.')
+ if mode=='cloud' and not MANAGED_CLOUD:
   st.caption('Acceso privado efímero: el endpoint y la clave se transmiten al servidor Streamlit. Solo introducir con autorización expresa. No se guardan en archivos ni secretos del servicio; el cliente autenticado permanece en RAM de esta sesión.')
   with st.form('cloud_access'):
    st.text_input('Endpoint HTTPS de Qdrant Cloud',key='session_qdrant_url')
@@ -58,15 +62,21 @@ with st.sidebar:
  k=st.slider('Fragmentos recuperados',1,6,3)
  tema=st.selectbox('Filtro temático',['Todos','academico','financiero','bienestar'])
  if st.button('Nueva conversación'): st.session_state.history=[];st.session_state.last=None
- st.caption('Credenciales solo en variables de entorno o secrets. No se incluyen en el código.')
+ st.caption('No incluir claves en código ni preguntas. El acceso cloud usa la configuración privada del propietario o una sesión efímera autorizada.')
  if mode!='cloud' or provider=='extractive':st.warning('Modo parcial: no demuestra integración completa cloud + LLM.')
 @st.cache_resource
 def retriever(m):
  if m=='cloud':raise ValueError('Cloud no se almacena en caché global.')
  return Retriever(m)
 
+@st.cache_resource
+def managed_cloud_retriever():
+ if not MANAGED_CLOUD:raise ValueError('Sin configuración privada de servicio.')
+ return Retriever('cloud')
+
 def current_retriever(m):
  if m!='cloud':return retriever(m)
+ if MANAGED_CLOUD:return managed_cloud_retriever()
  r=st.session_state.get('cloud_retriever')
  if r is None:raise ValueError('Conecta el acceso privado de esta sesión.')
  if time.time()-st.session_state.get('cloud_connected_at',0)>900:
