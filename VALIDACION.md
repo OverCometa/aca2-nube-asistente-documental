@@ -25,3 +25,6 @@ Se corrigió llm_tested para contar llamadas efectivas, se separaron proveedores
 
 ## Pendientes actuales
 Demo pública verificada en https://aca2-nube-asistente-overcometa.streamlit.app/ con consulta de estudio, estado extractivo_no_llm, tres guías y 26 fragmentos. Pendientes: video personal y una demostración pública integral cloud+LLM si se requiere. La demo sin configuración privada es local/extractiva, no la integración cloud+LLM completa. La generación conserva límites de formato y longitud; requiere revisión humana. Actividad no enviada a CDigital.
+
+## Nueva versión generativa sin API de pago (pendiente cotejo del despliegue)
+20pruebas aprobadas localmente, incluyendo aislamiento de clientes por sesión con credenciales ficticias, limpieza del campo de clave, entorno global intacto y desconexión. Bootstrap de activos oficiales con hashes fijos revisado; generación local real de estudio útil comprobada. Primera medición aproximada mostró memoria cercana al límite de alojamiento, por lo que se redujo batch, se serializaron consultas y se libera el encoder antes de generar. No se ha transmitido una clave real al servidor público durante estas pruebas. Los resultados anteriores de app extractiva son históricos; la nueva generación pública necesita verificación externa tras el commit.

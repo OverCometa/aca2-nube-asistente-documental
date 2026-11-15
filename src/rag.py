@@ -3,6 +3,8 @@ from pathlib import Path
 import json, os, re, sqlite3, time, urllib.request, subprocess, tempfile, hashlib
 from functools import lru_cache
 import numpy as np
+import threading
+GENERATION_LOCK=threading.Lock()
 from sklearn.feature_extraction.text import TfidfVectorizer
 ROOT=Path(__file__).resolve().parents[1]
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
@@ -21,18 +23,18 @@ def build_catalog():
     return len(docs)
 
 class Retriever:
-    def __init__(self,mode='local'):
+    def __init__(self,mode='local',cloud_url=None,cloud_api_key=None):
         self.mode=mode; self.docs=documents()
         if mode=='cloud':
             from qdrant_client import QdrantClient
             from fastembed import TextEmbedding
-            url=os.getenv('QDRANT_URL','');key=os.getenv('QDRANT_API_KEY','')
+            url=cloud_url if cloud_url is not None else os.getenv('QDRANT_URL','');key=cloud_api_key if cloud_api_key is not None else os.getenv('QDRANT_API_KEY','')
             if not url.startswith('https://') or not key: raise ValueError('Faltan QDRANT_URL y QDRANT_API_KEY. No se realizó una consulta cloud.')
             self.client=QdrantClient(url=url,api_key=key,timeout=30)
             self.collection=os.getenv('QDRANT_COLLECTION',COLLECTION)
             info=self.client.get_collection(self.collection)
             if getattr(info.config.params.vectors,'size',None)!=384: raise ValueError('Colección incompatible con el modelo ACA1 de 384 dimensiones.')
-            self.encoder=TextEmbedding(model_name=MODEL,cache_dir=os.getenv('FASTEMBED_CACHE_PATH',str(ROOT/'.cache')),threads=2)
+            self.encoder=None  # Loaded only when querying; avoids per-session idle model memory.
         elif mode=='semantic_local':
             from fastembed import TextEmbedding
             from qdrant_client import QdrantClient, models
@@ -51,6 +53,9 @@ class Retriever:
         if self.mode in ('cloud','semantic_local'):
             from qdrant_client import models
             filt=models.Filter(must=[models.FieldCondition(key='tema',match=models.MatchValue(value=tema))]) if tema else None
+            if self.encoder is None:
+                from fastembed import TextEmbedding
+                self.encoder=TextEmbedding(model_name=MODEL,cache_dir=os.getenv('FASTEMBED_CACHE_PATH',str(ROOT/'.cache')),threads=2)
             vec=list(self.encoder.embed([question]))[0]
             points=self.client.query_points(self.collection,query=vec.tolist(),limit=k,with_payload=True,query_filter=filt).points
             hits=[{**p.payload,'score':float(p.score)} for p in points]
@@ -99,7 +104,10 @@ def generate(msgs,provider='extractive'):
         with tempfile.NamedTemporaryFile(mode='w',encoding='utf-8',suffix='.txt',delete=False) as f:
             f.write(prompt); path=f.name
         try:
-            out=subprocess.run([binary,'-m',model,'-f',path,'-n','240','-t','2','-c','4096','--temp','0','--no-display-prompt','--no-conversation'],capture_output=True,text=True,timeout=120,check=True)
+            if not GENERATION_LOCK.acquire(blocking=False):raise RuntimeError('El modelo está atendiendo otra consulta. Intenta nuevamente en unos segundos.')
+            try:
+                out=subprocess.run([binary,'-m',model,'-f',path,'-n','240','-t','2','-c','4096','-b','128','-ub','64','--temp','0','--no-display-prompt','--no-conversation'],capture_output=True,text=True,timeout=180,check=True)
+            finally:GENERATION_LOCK.release()
             return out.stdout.replace('<|im_end|>','').replace('[end of text]','').strip()
         finally: Path(path).unlink(missing_ok=True)
     if provider=='hf':
@@ -131,6 +139,10 @@ def citation_check(answer,n):
 def answer(question,retriever,provider='extractive',k=3,tema=None,history=None):
     start=time.perf_counter();result=retriever.search(question,k,tema);hits=[expand_evidence(h) for h in result['hits']]
     result['hits']=hits
+    if os.getenv('ACA_LOW_MEMORY')=='1' and hasattr(retriever,'encoder'):
+        retriever.encoder=None
+        import gc
+        gc.collect()
     # Umbral exploratorio distinto por representación; no es probabilidad de verdad.
     threshold=0.12 if retriever.mode=='local' else 0.35
     llm_called=False; raw_answer=None
@@ -145,4 +157,4 @@ def answer(question,retriever,provider='extractive',k=3,tema=None,history=None):
         if not citation_check(text,len(hits)):
             text=ABSTAIN+' La salida del modelo no presentó citas válidas; no se muestra como respuesta sustentada.';status='salida_no_validada'
         else: status='generado_con_citas_sintacticas'
-    return {**result,'question':question,'raw_llm_output_for_audit':raw_answer,'llm_called':llm_called,'answer':text,'status':status,'provider':provider,'total_ms':round((time.perf_counter()-start)*1000,2),'note':'Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana.'}
+    return {**result,'question':question,'raw_llm_output_for_audit':raw_answer,'llm_called':llm_called,'answer':text,'status':status,'provider':provider,'retrieval_mode':retriever.mode,'total_ms':round((time.perf_counter()-start)*1000,2),'note':'Citas válidas sintácticamente no garantizan fidelidad semántica; requiere revisión humana.'}
