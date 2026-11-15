@@ -6,7 +6,7 @@ Repositorio público: https://github.com/OverCometa/aca2-nube-asistente-document
 
 Se verificó la colección original de Qdrant Cloud `aca1_permanencia_documental_v1`:384 dimensiones y 26 de 26 fragmentos coincidentes con ACA1. Se ejecutaron cuatro consultas con recuperación cloud y generación local Qwen2.5-1.5B-Instruct-GGUF Q4_K_M mediante llama.cpp b12400. El modelo se llamó tres veces; una consulta se abstuvo antes de generación. No se modificó la colección.
 
-La aplicación arranca sin claves en diagnóstico local/extractivo. Ese modo muestra fragmentos, NO es un chatbot generativo ni prueba de conexión cloud. El despliegue público está pendiente de autorización de conexión y verificación. No hay servicios de pago ni claves incluidas.
+La aplicación arranca sin claves en diagnóstico local/extractivo. Ese modo muestra fragmentos, NO es un chatbot generativo ni prueba de conexión cloud. Demo pública verificada: https://aca2-nube-asistente-overcometa.streamlit.app/ . Su estado es `extractivo_no_llm`: no utiliza Qdrant Cloud ni genera con un LLM. No hay servicios de pago ni claves incluidas.
 
 ## Evidencia incluida
 - `results/cloud_rag_acceptance.json`: cuatro consultas reales cloud+LLM local y comprobación del corpus.
@@ -48,7 +48,7 @@ Configurar LLAMA_CPP_BIN y GGUF_MODEL_PATH con rutas locales absolutas. Ejecutar
 Pregunta → MiniLM multilingüe del ACA1 → Qdrant Top-k → párrafos originales completos → LLM → control de citas → respuesta y fuentes. Se conservan fragmentos, identificadores y hashes. La expansión evita cortar negaciones; una prueba comprueba el caso detectado. SQLite puede reconstruir el catálogo local. La UI ofrece historial, panel documental y resultados.
 
 ## Pendientes de entrega
-- URL pública de app y comprobación externa; publicar el repositorio no despliega la aplicación.
+- Demo pública diagnóstica ya verificada. La demostración integral de Qdrant Cloud + LLM sigue siendo la ejecución privada/local documentada; no está desplegada públicamente.
 - Video personal de sustentación de 3–5 min y enlaces finales en póster.
 - Revisión de las limitaciones de generación. No declarar calidad de producción.
 No se ha enviado la actividad en CDigital.

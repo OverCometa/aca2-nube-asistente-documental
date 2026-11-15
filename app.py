@@ -50,4 +50,4 @@ with evaltab:
  files=sorted(Path('results').glob('*.json'))
  selected=st.selectbox('Registro de pruebas',files,format_func=lambda p:p.name)
  if selected:st.json(json.loads(selected.read_text()))
- st.warning('La evaluación local no sustituye las pruebas reales de Qdrant Cloud y un LLM. Ver README para completarlas.')
+ st.warning('Los registros conservan pruebas de distintas configuraciones. cloud_rag_acceptance.json documenta la prueba real de Qdrant Cloud + LLM local; no significa que el modo actual de esta app esté conectado a cloud o genere con LLM. Consulta la configuración y el estado de cada respuesta.')

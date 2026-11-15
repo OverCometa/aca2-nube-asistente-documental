@@ -24,4 +24,4 @@ Se corrigió llm_tested para contar llamadas efectivas, se separaron proveedores
 5. Coherencia: documentación pública actualizada, evidencias citadas presentes, límites de demo explícitos.
 
 ## Pendientes actuales
-Despliegue y URL pública verificable, video personal y actualización de sus enlaces en póster. La demo sin configuración privada es local/extractiva, no la integración cloud+LLM completa. La generación conserva límites de formato y longitud; requiere revisión humana. Actividad no enviada a CDigital.
+Demo pública verificada en https://aca2-nube-asistente-overcometa.streamlit.app/ con consulta de estudio, estado extractivo_no_llm, tres guías y 26 fragmentos. Pendientes: video personal y una demostración pública integral cloud+LLM si se requiere. La demo sin configuración privada es local/extractiva, no la integración cloud+LLM completa. La generación conserva límites de formato y longitud; requiere revisión humana. Actividad no enviada a CDigital.
